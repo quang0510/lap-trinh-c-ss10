@@ -15,9 +15,9 @@ int main(){
 			
 		}
 	}
-	for(int i=0;i<n;i++){
-		for(int j=0;j<m;j++){
-			for(int k=j+1;k<m;k++){
+	for(int j=0;j<n;j++){
+		for(int i=0;i<m;i++){
+			for(int k=i+1;k<m;k++){
 				if(number[i][j]>number[i][k]){
 					int temp;
 					temp=number[i][j];
@@ -29,7 +29,7 @@ int main(){
 	}
 	for(int i=0;i<n;i++){
 		for(int j=0;j<m;j++){
-			printf("%d ", number[i][j]);
+			printf("%d \t", number[i][j]);
 		}
 		printf("\n");
 	}
